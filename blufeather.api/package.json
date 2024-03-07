@@ -9,6 +9,7 @@
   "author": "JT Mozingo",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "plaid": "^21.0.0"
   }
 }
