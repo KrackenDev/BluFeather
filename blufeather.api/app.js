@@ -1,4 +1,5 @@
 require("dotenv").config();
+const testPlaidConnection = require("./controllers/plaidController");
 const express = require("express");
 
 const app = express();
@@ -13,4 +14,9 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
   res.send("Hello World");
+});
+
+app.get("/testPlaidConnection", async (req, res) => {
+  const authToken = testPlaidConnection();
+  res.send(authToken);
 });
