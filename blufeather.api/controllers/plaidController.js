@@ -15,6 +15,8 @@ module.exports = async function testPlaidConnection() {
   const client = new PlaidApi(configuration);
 
   const publicTokenRequest = {
+    client_id: process.env.PLAID_CLIENT_ID,
+    secret: process.env.PLAID_SECRET,
     institution_id: TestConstants.INSTITUTION,
     initial_products: TestConstants.PRODUCTS,
   };

@@ -25,6 +25,4 @@ const TestConstants = {
   WEBHOOK_VERIFICATION_KEY_ID: "6c5516e1-92dc-479e-a8ff-5a51992e0001",
 };
 
-module.exports = {
-  TestConstants: TestConstants,
-};
+module.exports = TestConstants;

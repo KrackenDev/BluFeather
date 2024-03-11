@@ -1,4 +1,3 @@
-require("dotenv").config();
 const testPlaidConnection = require("./controllers/plaidController");
 const express = require("express");
 
@@ -17,6 +16,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/testPlaidConnection", async (req, res) => {
-  const authToken = testPlaidConnection();
+  const authToken = await testPlaidConnection();
   res.send(authToken);
 });
